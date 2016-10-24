@@ -1,4 +1,10 @@
-﻿using System;
+﻿/*
+    Author: Ijaaz Lagardien
+    Student Number: 214167542
+    File: Address.cs
+    Subject: Technical Programming 2
+*/
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,19 +17,36 @@ namespace DesktopApp.main.domain
     class Menu
     {
         private string category;
-        public Menu()
-        {
+        public Menu(){}
 
+        public string Category
+        {
+            get{return category;}
+            set{ category = value; }
         }
 
-        public void setCategory(string category)
+        private class Builder
         {
-            this.category = category;
-        }
+            private String category;
 
-        public string getCategory()
-        {
-            return category;
+            public Builder() { }
+
+            public Builder Category(String category)
+            {
+                this.category = category;
+                return this;
+            }
+
+            public Builder copy(Menu menu)
+            {
+                this.category = menu.category;
+                return this;
+            }
+
+            public Menu build()
+            {
+                return new Menu();
+            }
         }
     }
 }
