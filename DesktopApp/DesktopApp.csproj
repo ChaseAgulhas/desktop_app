@@ -52,8 +52,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="main\domain\Address.cs" />
+    <Compile Include="main\domain\Customer.cs" />
+    <Compile Include="main\domain\Delivery.cs" />
+    <Compile Include="main\domain\Driver.cs" />
+    <Compile Include="main\domain\FoodItem.cs" />
+    <Compile Include="main\domain\Login.cs" />
     <Compile Include="main\domain\Menu.cs" />
     <Compile Include="main\domain\Person.cs" />
+    <Compile Include="main\domain\Vehicle.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
