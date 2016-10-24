@@ -59,7 +59,7 @@ namespace DesktopApp.main
             throw new NotImplementedException();
         }
 
-        private static class Builder
+        private class Builder
         {
             public Builder(){}
             private String streetNumber;
