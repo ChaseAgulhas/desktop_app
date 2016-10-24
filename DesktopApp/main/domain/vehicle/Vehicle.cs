@@ -101,7 +101,7 @@ namespace DesktopApp.main.domain
 
             public Vehicle build()
             {
-                return new Vehicle();
+                return new Vehicle()
             }
         }
     }
