@@ -1,4 +1,10 @@
-﻿using DesktopApp.main.domain;
+﻿/*
+    Author: Ijaaz Lagardien
+    Student Number: 214167542
+    File: CustomerFactory.cs
+    Subject: Technical Programming 2
+*/
+using DesktopApp.main.domain;
 using System;
 
 namespace DesktopApp.main.factories.customer
