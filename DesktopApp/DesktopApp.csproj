@@ -69,7 +69,6 @@
     <Compile Include="main\factories\foodItem\FoodItemFactory.cs" />
     <Compile Include="main\factories\login\LoginFactory.cs" />
     <Compile Include="main\factories\menu\MenuFactory.cs" />
-    <Compile Include="main\factories\person\PersonFactory.cs" />
     <Compile Include="main\factories\vehicle\VehicleFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

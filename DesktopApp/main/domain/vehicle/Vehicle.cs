@@ -5,10 +5,6 @@
     Subject: Technical Programming 2
 */
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Runtime.Serialization;
 
 namespace DesktopApp.main.domain
@@ -57,52 +53,6 @@ namespace DesktopApp.main.domain
         public void GetObjectData(SerializationInfo info, StreamingContext context)
         {
             throw new NotImplementedException();
-        }
-
-        private class Builder
-        {
-            private String make;
-            private String model;
-            private String year;
-            private String registrationNumber;
-
-            public Builder Make(String value)
-            {
-                this.make = value;
-                return this;
-            }
-
-            public Builder Model(String value)
-            {
-                this.model = value;
-                return this;
-            }
-
-            public Builder Year(String value)
-            {
-                this.year = value;
-                return this;
-            }
-
-            public Builder RegistrationNumber(String value)
-            {
-                this.registrationNumber = value;
-                return this;
-            }
-
-            public Builder copy(Vehicle value)
-            {
-                this.make = value.make;
-                this.model = value.model;
-                this.year = value.year;
-                this.registrationNumber = value.registrationNumber;
-                return this;
-            }
-
-            public Vehicle build()
-            {
-                return new Vehicle();
-            }
         }
     }
 }
