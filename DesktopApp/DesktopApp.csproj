@@ -62,6 +62,15 @@
     <Compile Include="main\domain\menu\Menu.cs" />
     <Compile Include="main\domain\person\Person.cs" />
     <Compile Include="main\domain\vehicle\Vehicle.cs" />
+    <Compile Include="main\factories\address\AddressFactory.cs" />
+    <Compile Include="main\factories\customer\CustomerFactory.cs" />
+    <Compile Include="main\factories\delivery\DeliveryFactory.cs" />
+    <Compile Include="main\factories\driver\DriverFactory.cs" />
+    <Compile Include="main\factories\foodItem\FoodItemFactory.cs" />
+    <Compile Include="main\factories\login\LoginFactory.cs" />
+    <Compile Include="main\factories\menu\MenuFactory.cs" />
+    <Compile Include="main\factories\person\PersonFactory.cs" />
+    <Compile Include="main\factories\vehicle\VehicleFactory.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -90,7 +99,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="main\factories\" />
+    <Folder Include="main\Services\" />
     <Folder Include="test\domain\" />
     <Folder Include="test\factories\" />
   </ItemGroup>
