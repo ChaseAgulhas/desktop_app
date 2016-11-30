@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DailySpecials.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailySpecials.Designer.cs">
+      <DependentUpon>DailySpecials.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,10 +76,28 @@
     <Compile Include="main\factories\login\LoginFactory.cs" />
     <Compile Include="main\factories\menu\MenuFactory.cs" />
     <Compile Include="main\factories\vehicle\VehicleFactory.cs" />
+    <Compile Include="OutstandingOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OutstandingOrders.Designer.cs">
+      <DependentUpon>OutstandingOrders.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ReportsMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportsMenu.Designer.cs">
+      <DependentUpon>ReportsMenu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DailySpecials.resx">
+      <DependentUpon>DailySpecials.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OutstandingOrders.resx">
+      <DependentUpon>OutstandingOrders.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
