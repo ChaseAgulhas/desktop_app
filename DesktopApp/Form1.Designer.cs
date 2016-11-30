@@ -85,7 +85,7 @@
             this.Controls.Add(this.btnOutstandingOrders);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "D\'elite Takeaways";
+            this.Text = "D\'elite Takeaways - Main Menu";
             this.ResumeLayout(false);
 
         }

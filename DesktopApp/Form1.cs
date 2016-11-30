@@ -14,21 +14,19 @@ namespace DesktopApp
         {
             OutstandingOrders newOrders = new OutstandingOrders();
             newOrders.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnSpecials_Click(object sender, EventArgs e)
         {
-            DailySpecials defineNewSpecial = new DailySpecials();
-            defineNewSpecial.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnReports_Click(object sender, EventArgs e)
         {
             ReportsMenu reportsMenu = new ReportsMenu();
             reportsMenu.Show();
-            this.Hide();
+            //this.Hide();
         }
 
         private void btnExit_Click(object sender, EventArgs e)

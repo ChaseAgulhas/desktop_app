@@ -16,5 +16,15 @@ namespace DesktopApp
         {
             InitializeComponent();
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

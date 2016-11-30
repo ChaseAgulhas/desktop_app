@@ -16,5 +16,30 @@ namespace DesktopApp
         {
             InitializeComponent();
         }
+
+        private void btnCompletedOrders_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListAppUsers_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnListDrivers_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnComments_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCloseReportsMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
