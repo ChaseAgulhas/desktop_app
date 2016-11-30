@@ -19,6 +19,8 @@ namespace DesktopApp
 
         private void btnSpecials_Click(object sender, EventArgs e)
         {
+            DailySpecials specials = new DailySpecials();
+            specials.Show();
             //this.Hide();
         }
 
