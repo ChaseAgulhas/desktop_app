@@ -12,18 +12,18 @@ namespace DesktopApp.main.domain.specials
     [Serializable]
     class DailySpecials :ISerializable
     {
-        private String name, price, DayOfSpecial;
+        private String name, price, dayOfSpecial;
 
-        public string DayOfSpecial1
+        public string DayOfSpecial
         {
             get
             {
-                return DayOfSpecial;
+                return dayOfSpecial;
             }
 
             set
             {
-                DayOfSpecial = value;
+                dayOfSpecial = value;
             }
         }
 
