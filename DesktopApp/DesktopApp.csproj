@@ -73,6 +73,7 @@
     <Compile Include="main\domain\login\Login.cs" />
     <Compile Include="main\domain\menu\Menu.cs" />
     <Compile Include="main\domain\person\Person.cs" />
+    <Compile Include="main\domain\specials\DailySpecials.cs" />
     <Compile Include="main\domain\vehicle\Vehicle.cs" />
     <Compile Include="main\factories\address\AddressFactory.cs" />
     <Compile Include="main\factories\customer\CustomerFactory.cs" />
