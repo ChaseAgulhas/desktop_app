@@ -119,6 +119,7 @@
     <Compile Include="ReviewsAndComplaints.Designer.cs">
       <DependentUpon>ReviewsAndComplaints.cs</DependentUpon>
     </Compile>
+    <Compile Include="test\domain\address\AddressTest.cs" />
     <EmbeddedResource Include="CompletedOrders.resx">
       <DependentUpon>CompletedOrders.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,7 +168,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="test\domain\address\" />
     <Folder Include="test\domain\customer\" />
     <Folder Include="test\domain\delivery\" />
     <Folder Include="test\domain\driver\" />

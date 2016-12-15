@@ -10,7 +10,7 @@ using System.Runtime.Serialization;
 namespace DesktopApp.main
 {
     [Serializable]
-    class Address : ISerializable
+    public class Address : ISerializable
     {
         private String streetNumber;
         private String streetName;
@@ -19,6 +19,15 @@ namespace DesktopApp.main
         private String postCode;
 
         public Address(){}
+
+        public Address(string streetNumber, string streetName, string suburb, string city, string postCode)
+        {
+            this.streetNumber = streetNumber;
+            this.streetName = streetName;
+            this.suburb = suburb;
+            this.city = city;
+            this.postCode = postCode;
+        }
 
         public string StreetNumber
         {
