@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -73,7 +77,7 @@
     <Compile Include="main\domain\login\Login.cs" />
     <Compile Include="main\domain\menu\Menu.cs" />
     <Compile Include="main\domain\person\Person.cs" />
-    <Compile Include="main\domain\specials\DailySpecials.cs" />
+    <Compile Include="main\domain\specials\DailySpecial.cs" />
     <Compile Include="main\domain\vehicle\Vehicle.cs" />
     <Compile Include="main\factories\address\AddressFactory.cs" />
     <Compile Include="main\factories\customer\CustomerFactory.cs" />
@@ -148,6 +152,7 @@
     <EmbeddedResource Include="ReviewsAndComplaints.resx">
       <DependentUpon>ReviewsAndComplaints.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,8 +167,26 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="test\domain\" />
-    <Folder Include="test\factories\" />
+    <Folder Include="test\domain\address\" />
+    <Folder Include="test\domain\customer\" />
+    <Folder Include="test\domain\delivery\" />
+    <Folder Include="test\domain\driver\" />
+    <Folder Include="test\domain\foodItem\" />
+    <Folder Include="test\domain\login\" />
+    <Folder Include="test\domain\menu\" />
+    <Folder Include="test\domain\person\" />
+    <Folder Include="test\domain\specials\" />
+    <Folder Include="test\domain\vehicle\" />
+    <Folder Include="test\factories\address\" />
+    <Folder Include="test\factories\customer\" />
+    <Folder Include="test\factories\delivery\" />
+    <Folder Include="test\factories\driver\" />
+    <Folder Include="test\factories\foodItem\" />
+    <Folder Include="test\factories\login\" />
+    <Folder Include="test\factories\menu\" />
+    <Folder Include="test\factories\person\" />
+    <Folder Include="test\factories\specials\" />
+    <Folder Include="test\factories\vehicle\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
