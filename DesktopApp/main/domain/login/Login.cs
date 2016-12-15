@@ -10,12 +10,18 @@ using System.Runtime.Serialization;
 namespace DesktopApp.main.domain
 {
     [Serializable]
-    class Login : ISerializable
+    public class Login : ISerializable
     {
         private String username;
         private String password;
 
         public Login(){ }
+
+        public Login(String username, String password)
+        {
+            this.username = username;
+            this.password = password;
+        }
 
         public string Username
         {

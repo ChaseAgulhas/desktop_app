@@ -13,7 +13,7 @@ using System.Threading.Tasks;
 
 namespace DesktopApp.main.factories.menu
 {
-    class MenuFactory
+    public class MenuFactory
     {
         public static Menu getMenu(String category)
         {

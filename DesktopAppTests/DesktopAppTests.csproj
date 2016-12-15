@@ -52,6 +52,22 @@
   </Choose>
   <ItemGroup>
     <Compile Include="main\domain\address\AddressTests.cs" />
+    <Compile Include="main\domain\customer\CustomerTests.cs" />
+    <Compile Include="main\domain\delivery\impl\DeliveryImplTests.cs" />
+    <Compile Include="main\domain\driver\DriverTests.cs" />
+    <Compile Include="main\domain\foodItem\FoodItemTests.cs" />
+    <Compile Include="main\domain\login\LoginTests.cs" />
+    <Compile Include="main\domain\menu\MenuTests.cs" />
+    <Compile Include="main\domain\specials\DailySpecialTests.cs" />
+    <Compile Include="main\domain\vehicle\VehicleTests.cs" />
+    <Compile Include="main\factories\address\AddressFactoryTests.cs" />
+    <Compile Include="main\factories\customer\CustomerFactoryTests.cs" />
+    <Compile Include="main\factories\delivery\DeliveryFactoryTests.cs" />
+    <Compile Include="main\factories\driver\DriverFactoryTests.cs" />
+    <Compile Include="main\factories\foodItem\FoodItemFactoryTests.cs" />
+    <Compile Include="main\factories\login\LoginFactoryTests.cs" />
+    <Compile Include="main\factories\menu\MenuFactoryTests.cs" />
+    <Compile Include="main\factories\vehicle\VehicleFactoryTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

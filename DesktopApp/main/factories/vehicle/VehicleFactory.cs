@@ -9,7 +9,7 @@ using System;
 
 namespace DesktopApp.main.factories.vehicle
 {
-    class VehicleFactory
+    public class VehicleFactory
     {
         public static Vehicle getVehicle(String make,String model,String year,String registrationNumber, String owner)
         {

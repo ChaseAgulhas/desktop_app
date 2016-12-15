@@ -10,7 +10,7 @@ using System.Runtime.Serialization;
 namespace DesktopApp.main.domain
 {
     [Serializable]
-    class Vehicle : ISerializable
+    public class Vehicle : ISerializable
     {
         private String make;
         private String model;
@@ -19,6 +19,15 @@ namespace DesktopApp.main.domain
         private String owner;
 
         public Vehicle(){}
+
+        public Vehicle(String make, String model, String year, String registrationNumber, String owner)
+        {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.registrationNumber = registrationNumber;
+            this.owner = owner;
+        }
 
         public string Make
         {

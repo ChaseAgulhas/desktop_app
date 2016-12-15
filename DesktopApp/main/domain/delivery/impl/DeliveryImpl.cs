@@ -15,7 +15,7 @@ using System.Runtime.Serialization;
 namespace DesktopApp.main.domain.delivery.impl
 {
     [Serializable]
-    class DeliveryImpl : Delivery, ISerializable
+    public class DeliveryImpl : Delivery, ISerializable
     {
         private String destination;
         private String description;
@@ -24,6 +24,16 @@ namespace DesktopApp.main.domain.delivery.impl
         private double totalDistance = 0.0;
 
         public DeliveryImpl(){}
+
+        public DeliveryImpl(String destination, String description, String recipient, String dueDate, double totalDistance)
+        {
+            this.destination = destination;
+            this.description = description;
+            this.recipient = recipient;
+            this.dueDate = dueDate;
+            this.totalDistance = totalDistance;
+
+        }
 
         public string Destination
         {

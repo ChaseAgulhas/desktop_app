@@ -9,10 +9,15 @@ using System;
 namespace DesktopApp.main.domain
 {
     [Serializable]
-    class Menu
+    public class Menu
     {
         private string category;
         public Menu(){}
+
+        public Menu(string category)
+        {
+            this.category = category;
+        }
 
         public string Category
         {

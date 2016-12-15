@@ -10,9 +10,18 @@ using System.Runtime.Serialization;
 namespace DesktopApp.main.domain.specials
 {
     [Serializable]
-    class DailySpecial :ISerializable
+    public class DailySpecial :ISerializable
     {
         private String name, price, dayOfSpecial;
+
+        public DailySpecial() { }
+
+        public DailySpecial(String name, String price, String dayOfSpecial)
+        {
+            this.name = name;
+            this.price = price;
+            this.dayOfSpecial = dayOfSpecial;
+        }
 
         public string DayOfSpecial
         {

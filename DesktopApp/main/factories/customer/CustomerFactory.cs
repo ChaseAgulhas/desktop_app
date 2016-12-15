@@ -9,7 +9,7 @@ using System;
 
 namespace DesktopApp.main.factories.customer
 {
-    class CustomerFactory
+    public class CustomerFactory
     {
         public static Customer getCustomer(String name, String surname,String phoneNumber) 
         {

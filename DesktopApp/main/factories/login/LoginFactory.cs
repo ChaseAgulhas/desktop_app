@@ -9,7 +9,7 @@ using System;
 
 namespace DesktopApp.main.factories.login
 {
-    class LoginFactory
+    public class LoginFactory
     {
         public static Login getLogin(String username,String password)
         {

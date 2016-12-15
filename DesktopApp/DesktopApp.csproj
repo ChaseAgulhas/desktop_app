@@ -119,7 +119,6 @@
     <Compile Include="ReviewsAndComplaints.Designer.cs">
       <DependentUpon>ReviewsAndComplaints.cs</DependentUpon>
     </Compile>
-    <Compile Include="test\domain\address\AddressTest.cs" />
     <EmbeddedResource Include="CompletedOrders.resx">
       <DependentUpon>CompletedOrders.cs</DependentUpon>
     </EmbeddedResource>
@@ -167,27 +166,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="test\domain\customer\" />
-    <Folder Include="test\domain\delivery\" />
-    <Folder Include="test\domain\driver\" />
-    <Folder Include="test\domain\foodItem\" />
-    <Folder Include="test\domain\login\" />
-    <Folder Include="test\domain\menu\" />
-    <Folder Include="test\domain\person\" />
-    <Folder Include="test\domain\specials\" />
-    <Folder Include="test\domain\vehicle\" />
-    <Folder Include="test\factories\address\" />
-    <Folder Include="test\factories\customer\" />
-    <Folder Include="test\factories\delivery\" />
-    <Folder Include="test\factories\driver\" />
-    <Folder Include="test\factories\foodItem\" />
-    <Folder Include="test\factories\login\" />
-    <Folder Include="test\factories\menu\" />
-    <Folder Include="test\factories\person\" />
-    <Folder Include="test\factories\specials\" />
-    <Folder Include="test\factories\vehicle\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

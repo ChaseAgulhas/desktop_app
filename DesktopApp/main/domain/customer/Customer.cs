@@ -10,11 +10,18 @@ using System.Runtime.Serialization;
 namespace DesktopApp.main.domain
 {
     [Serializable]
-    class Customer : ISerializable
+    public class Customer : ISerializable
     {
         private String name, surname, phoneNumber;
 
         public Customer(){}
+
+        public Customer(String name, String surname, String phoneNumber)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.phoneNumber = phoneNumber;
+        }
 
         public string Name
         {

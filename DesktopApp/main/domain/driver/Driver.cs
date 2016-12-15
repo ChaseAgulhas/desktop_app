@@ -10,7 +10,7 @@ using System.Runtime.Serialization;
 namespace DesktopApp.main.domain
 {
     [Serializable]
-    class Driver : ISerializable
+    public class Driver : ISerializable
     {
         private String name;
         private String surname;
@@ -20,6 +20,15 @@ namespace DesktopApp.main.domain
         private byte[] profilePhoto;
 
         public Driver(){}
+
+        public Driver(String name, String surname, String cellPhoneNumber, String email, String password)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.cellPhoneNumber = cellPhoneNumber;
+            this.email = email;
+            this.password = password;
+        }
 
         public string Name
         {

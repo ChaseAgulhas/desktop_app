@@ -9,9 +9,9 @@ using System;
 
 namespace DesktopApp.main.factories.driver
 {
-    class DriverFactory
+    public class DriverFactory
     {
-        public static Driver getDriver(String name, String surname,String cellphoneNumber,String email,String password, byte[] profilePhoto)
+        public static Driver getDriver(String name, String surname,String cellphoneNumber,String email,String password)
         {
             Driver driverObject = new Driver();
             driverObject.Name = name;
@@ -19,7 +19,7 @@ namespace DesktopApp.main.factories.driver
             driverObject.CellPhoneNumber = cellphoneNumber;
             driverObject.Email = email;
             driverObject.Password = password;
-            driverObject.ProfilePhoto = profilePhoto;
+            //driverObject.ProfilePhoto = profilePhoto;
             return driverObject;
         }
     }

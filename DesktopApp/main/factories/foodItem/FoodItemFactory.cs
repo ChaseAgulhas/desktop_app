@@ -9,7 +9,7 @@ using System;
 
 namespace DesktopApp.main.factories.foodItem
 {
-    class FoodItemFactory
+    public class FoodItemFactory
     {
         public static FoodItem getFoodItem(String name, double price,int amountAvailable)
         {
