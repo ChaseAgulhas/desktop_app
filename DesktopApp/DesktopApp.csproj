@@ -83,7 +83,6 @@
     <Compile Include="main\factories\login\LoginFactory.cs" />
     <Compile Include="main\factories\menu\MenuFactory.cs" />
     <Compile Include="main\factories\vehicle\VehicleFactory.cs" />
-    <Compile Include="main\Services\RestService.cs" />
     <Compile Include="OutstandingOrders.cs">
       <SubType>Form</SubType>
     </Compile>
