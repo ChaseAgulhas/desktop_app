@@ -93,6 +93,7 @@
             this.Name = "CompletedOrders";
             this.Text = "D\'elite Takeaways - Completed Orders";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.CompletedOrders_Load);
             this.ResumeLayout(false);
 
         }
