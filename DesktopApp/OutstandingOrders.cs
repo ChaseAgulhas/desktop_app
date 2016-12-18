@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -37,29 +38,62 @@ namespace DesktopApp
 
             //HttpClient client = new HttpClient();
 
-            using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
+            /*using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
             {
                 client.BaseAddress = new Uri("http://0.0.0.0");
                 HttpResponseMessage response = client.GetAsync("orders").Result;
                 response.EnsureSuccessStatusCode();
                 string result = response.Content.ReadAsStringAsync().Result;
-            }
+            }*/
             //HttpClientReponseMessage response = await client.GetAsync("server url");
             //response.EnsureSuccessStatusCode();
             //string responseBody = await response.Content.ReadAsStringAsync();
 
             //lstVNewOrders.Items.Add(new ListViewItem(new string[] {"1", "2", "3", "4", "5", "6" }));
+
+            String URI = "http://127.0.0.1";
+            String result = String.Empty;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URI);
+            request.AutomaticDecompression = DecompressionMethods.GZip;
+
+            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            using (Stream stream = response.GetResponseStream())
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                result = reader.ReadToEnd();
+            }
+
+            //For debugging
+            Console.WriteLine(result);
+
         }
 
         private void OutstandingOrders_Load(object sender, EventArgs e)
         {
-            using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
+            /*using (var client = new HttpClient(new HttpClientHandler { AutomaticDecompression = DecompressionMethods.GZip | DecompressionMethods.Deflate }))
             {
                 client.BaseAddress = new Uri("http://0.0.0.0");
                 HttpResponseMessage response = client.GetAsync("orders").Result;
                 response.EnsureSuccessStatusCode();
                 string result = response.Content.ReadAsStringAsync().Result;
+            }*/
+
+            String URI = "http://127.0.0.1";
+            String result = String.Empty;
+
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URI);
+            request.AutomaticDecompression = DecompressionMethods.GZip;
+
+            using (HttpWebResponse response = (HttpWebResponse)request.GetResponse())
+            using (Stream stream = response.GetResponseStream())
+            using (StreamReader reader = new StreamReader(stream))
+            {
+                result = reader.ReadToEnd();
             }
+
+            //For debugging
+            Console.WriteLine(result);
         }
     }
 }

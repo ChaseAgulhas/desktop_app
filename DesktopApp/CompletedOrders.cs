@@ -31,7 +31,7 @@ namespace DesktopApp
 
         public async void GetAllOrders()
         {
-            String URI = "URL HERE";
+            String URI = "http://127.0.0.1";
             String result = String.Empty;
 
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(URI);
