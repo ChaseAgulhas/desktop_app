@@ -93,6 +93,7 @@
             this.Name = "ReviewsAndComplaints";
             this.Text = "D\'elite Takeaways - Reviews and complaints";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.ReviewsAndComplaints_Load);
             this.ResumeLayout(false);
 
         }
