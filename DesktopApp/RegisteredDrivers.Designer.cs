@@ -93,6 +93,7 @@
             this.Name = "RegisteredDrivers";
             this.Text = "D\'elite Takeaways - Registered Drivers";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.RegisteredDrivers_Load);
             this.ResumeLayout(false);
 
         }

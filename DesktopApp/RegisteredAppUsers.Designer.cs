@@ -89,6 +89,7 @@
             this.Name = "RegisteredAppUsers";
             this.Text = "D\'elite Takeaways -Registered App Users";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.RegisteredAppUsers_Load);
             this.ResumeLayout(false);
 
         }
