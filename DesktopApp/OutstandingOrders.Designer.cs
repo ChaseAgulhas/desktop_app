@@ -93,6 +93,7 @@
             this.Text = "D\'elite Takeaways - Outstanding orders";
             this.TopMost = true;
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.OutstandingOrders_Load);
             this.ResumeLayout(false);
 
         }
